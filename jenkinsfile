@@ -1,0 +1,48 @@
+pipeline {
+    agent any
+    parameters {
+        string(name: 'BRANCH', defaultValue: 'main', description: '')
+    }
+    stages {
+        stage("GitHub Download") {
+            steps {
+                checkout scmGit(
+                    branches: [[name: "*/${params.BRANCH}"]],
+                    extensions: [],
+                    userRemoteConfigs: [[credentialsId: 'jenkins-ssh-key', url: 'git@github.com:talent-devps20/talent-eks.git']]
+                )
+            }
+            
+        }
+        stage("initialise") {
+            steps{
+                sh 'terraform init'
+            }
+      }
+      
+      stage("validation") {
+            steps{
+                sh 'terraform validate'
+            }
+      }
+      stage("planning") {
+            steps{
+                sh 'terraform plan'
+            }
+      }
+
+stage("deploy") {
+            steps{
+                sh 'terraform apply --auto-approve'
+            }
+       }
+    }
+    
+    post {
+        always {
+            emailext attachLog: true, body: '''hi the jenkins job status
+jenkins url:$BUILD_URL
+thanks devops team''', subject: 'jenkins build status:$BUILD_NUMBER', to: 'sumalatha.sanga09@gmail.com'
+        }
+    }
+}
