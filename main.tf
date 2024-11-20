@@ -15,7 +15,7 @@ data "aws_availability_zones" "available" {
 }
 
 locals {
-  cluster_name = "education-eks-${random_string.suffix.result}"
+  cluster_name = "talent-eks-${random_string.suffix.result}"
 }
 
 resource "random_string" "suffix" {
@@ -27,7 +27,7 @@ module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "5.8.1"
 
-  name = "education-vpc"
+  name = "talent-vpc"
 
   cidr = "10.0.0.0/16"
   azs  = slice(data.aws_availability_zones.available.names, 0, 3)
@@ -76,9 +76,9 @@ module "eks" {
     one = {
       name = "node-group-1"
 
-      instance_types = ["t3.small"]
+      instance_types = ["t2.small"]
 
-      min_size     = 1
+      min_size     = 0
       max_size     = 3
       desired_size = 2
     }
@@ -86,9 +86,9 @@ module "eks" {
     two = {
       name = "node-group-2"
 
-      instance_types = ["t3.small"]
+      instance_types = ["t2.small"]
 
-      min_size     = 1
+      min_size     = 0
       max_size     = 2
       desired_size = 1
     }
@@ -100,7 +100,7 @@ module "eks" {
 data "aws_iam_policy" "ebs_csi_policy" {
   arn = "arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy"
 }
-
+/*
 module "irsa-ebs-csi" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-assumable-role-with-oidc"
   version = "5.39.0"
@@ -110,4 +110,4 @@ module "irsa-ebs-csi" {
   provider_url                  = module.eks.oidc_provider
   role_policy_arns              = [data.aws_iam_policy.ebs_csi_policy.arn]
   oidc_fully_qualified_subjects = ["system:serviceaccount:kube-system:ebs-csi-controller-sa"]
-}
+} */
