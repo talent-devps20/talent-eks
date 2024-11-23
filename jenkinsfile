@@ -16,7 +16,7 @@ pipeline {
         }
         stage("initialise") {
             steps{
-                sh 'terraform init'
+                sh 'yes | terraform init'
             }
       }
       
