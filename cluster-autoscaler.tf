@@ -1,5 +1,5 @@
  module "eks-cluster-autoscaler" {
-  source = "lablabs/eks-cluster-autoscalar/aws"
+  source = "lablabs/eks-cluster-autoscaler/aws"
   version="2.2.0"
   #insert the 3 required variables here
   cluster_name                     = module.eks.cluster_name
