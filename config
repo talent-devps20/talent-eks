@@ -1,0 +1,51 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURCVENDQWUyZ0F3SUJBZ0lJRjZYSnFJT21HcWd3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TkRFeE1qQXhNREEzTURaYUZ3MHpOREV4TVRneE1ERXlNRFphTUJVeApFekFSQmdOVkJBTVRDbXQxWW1WeWJtVjBaWE13Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLCkFvSUJBUUNhZVZOeGhBSXo0Y2NNTDJxQTVtc0RkOFZZM3dGWDllcWRtVmluNnJqWUpYK2JJQmhLeXBRQXNWT3IKMTE2SnJqYVczc0ppRXJkWjRMUGpyUEhXdnRJNTNyWHpkL3lTc1NldzZuUVk1OVVBL0FMaWpTMGZDdnhVMjNuLwpCTnU0VExwYmFKaXQrU3ZhTEVPRjlhQTBra1NMQjhDNWhlclVQWktxdksyb2RLRE9tOUc4b1pKd0NaZnFWN1NsCnN3ZWgzZDVrMndickFEQ283UWI1Z0xscXlMZHgzc0dQbjFielpnd0puRVZZWWRkcnpGN1lYU3pXcFBmTzRpWk0KSFVwY2cxbmlMQWtPYzVVdUlFa1htaGtYR0hMWkdna0habTFpck15Uk84ZkNJZGRETno0OXhydTNxczlsZnRtVgpseXc3ZmNhTXVQVnJ0UzdBUTQ0Ymg3U0ZjRHV2QWdNQkFBR2pXVEJYTUE0R0ExVWREd0VCL3dRRUF3SUNwREFQCkJnTlZIUk1CQWY4RUJUQURBUUgvTUIwR0ExVWREZ1FXQkJUSmwzNlRLaC91SmlEeENFNFdzQ201R01JckNqQVYKQmdOVkhSRUVEakFNZ2dwcmRXSmxjbTVsZEdWek1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQjhYaERiT3ZKZgpsQ2VrbDlWTlZjUElnVWJEU2pjSy9UWnJkUzJlOUU0T0VDdzBYMW5LRGlwNGJHSGZ1VHdyd2dldlpyTW5MVkpyClNOZTJOeU5YbUVFLys0b0tkU2dEOUZzVzRCbFl5Q2V3bEdUQWJMR3A4NzdkTW5KK2tldVFSejZlY3huMWkzRmIKdHVnQXBYdi9LMVg5M011ek1hcFk0YTdicURqVG8rZEpDWndkUSthbkZCQWxHZU9ubWpPOUpCY0U4aW1iQ3ZPcwpzc1Q1ZlRZMVVqTHhiMmQvOXZGUS9VUGJyQkdsWWs1TG5yaXdVY25QdDhaUlFCTHRSSjVLcTNVTjBmWFdieEM4CmNtazJYRjQ1K3kwZWlTWTJZR0xmVjVwbGRXam9RQm56SHF0YUErMGYrTC9ZTVNwWEkrdjZHeCtkaDlNeTE2V1MKTFNEaWNFTW1MdTFiCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+    server: https://83949FACE78364B08D5206D98BE380B5.gr7.us-west-2.eks.amazonaws.com
+  name: arn:aws:eks:us-west-2:533266970461:cluster/talent-eks-SM2LaGeB
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURCVENDQWUyZ0F3SUJBZ0lJWkNHa2V3OUtLekV3RFFZSktvWklodmNOQVFFTEJRQXdGVEVUTUJFR0ExVUUKQXhNS2EzVmlaWEp1WlhSbGN6QWVGdzB5TkRFeE1qTXhNREl6TkRCYUZ3MHpOREV4TWpFeE1ESTROREJhTUJVeApFekFSQmdOVkJBTVRDbXQxWW1WeWJtVjBaWE13Z2dFaU1BMEdDU3FHU0liM0RRRUJBUVVBQTRJQkR3QXdnZ0VLCkFvSUJBUUMvSlYvNGVIZVVvMW1QTzVPYW81Sndqdk5POHdkR2ExSG9MUmlndktlS2tNVzlQQ0lMcWhmNnJhWmoKSEVYZkZ0S0VzU1BTaldYSnhtNUdmREN1SFRvakpZSVZ1MExwdUtQVmlXU3VTekYxWDZyeWp4bXY2ZFFUVzd3MApSbTZKNmtMTCtBQkk5cW5QcHFVY1o2bytLK1laZXp0RExQMEhhdEpBeWs1MlE0dkNKQ0ZwcHhRZFhUVzJueTR1CnRRLy9UL3lqU0NVYndwSFpSb3pnWC9zbG8wNGxSOHlvZWFOcHJtT2RMdkdnVGluYkFKU3JScHVZcnNCZlBMTmwKTkpXSWpiS3JWM3NwcDFlMHZiVlRDRCtmdExqZDVtcEF1OGVQalk0SkVVTEdQVEVkVlFLLy9qWHh5YU9kWEMyVgoveC9xMXFwc25kYkRMQlVGRlc1STRGWVNCOTJKQWdNQkFBR2pXVEJYTUE0R0ExVWREd0VCL3dRRUF3SUNwREFQCkJnTlZIUk1CQWY4RUJUQURBUUgvTUIwR0ExVWREZ1FXQkJRUTJ0VHBwMHFUZGJtcTUxRkgzYy9iKzByQkFEQVYKQmdOVkhSRUVEakFNZ2dwcmRXSmxjbTVsZEdWek1BMEdDU3FHU0liM0RRRUJDd1VBQTRJQkFRQmc4TjdNcmRTRQpiSEw4WkdwRlVwQTNOUVZWOHRtYW5acUV4Z20wU3gycSs3K2QvN3ZzdTlmT0hrQ0FEcDdTQ2cxUDNFYlB6SHRlCmJyNFJTbHlMczRCTXR0K21WUmppd1BXVkJLNlA5ckIwR29mb2tkclg4SmFpY2pPSEZBcmlQYVkrb0J1YWRmTi8KaEN2dXovUzBxd1hub09ZZTIzSk9TeGZ2YnQ4NmpnbHpJY1FWcVd0VW5DdmdWcFdwT0phUUZRKzhzZWJDY29WUgpQRFBXUnVvdUR5U2ZVUFpuVGtUWDFZeWQ4SFpVQzBDSzQrbmtGZElWVmJtV2VmNEVOK3g2WDdHdm1PWmNqMWRuClM4amk3UlBEcm5SMlFWRzZHK3VUT3NQTDdwcUV4RGNNSjFVR1dNUzVrZ1Z5K0dMcVZPN1JzajMvRHNmMTN1dzYKei9hdElCWXlXZVB6Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+    server: https://061780EE688E08795DF853149DC9B96F.gr7.us-west-2.eks.amazonaws.com
+  name: arn:aws:eks:us-west-2:533266970461:cluster/talent-eks-CL9edfvh
+contexts:
+- context:
+    cluster: arn:aws:eks:us-west-2:533266970461:cluster/talent-eks-SM2LaGeB
+    user: arn:aws:eks:us-west-2:533266970461:cluster/talent-eks-SM2LaGeB
+  name: arn:aws:eks:us-west-2:533266970461:cluster/talent-eks-SM2LaGeB
+- context:
+    cluster: arn:aws:eks:us-west-2:533266970461:cluster/talent-eks-CL9edfvh
+    user: arn:aws:eks:us-west-2:533266970461:cluster/talent-eks-CL9edfvh
+  name: arn:aws:eks:us-west-2:533266970461:cluster/talent-eks-CL9edfvh
+current-context: arn:aws:eks:us-west-2:533266970461:cluster/talent-eks-CL9edfvh
+kind: Config
+preferences: {}
+users:
+- name: arn:aws:eks:us-west-2:533266970461:cluster/talent-eks-SM2LaGeB
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1beta1
+      args:
+      - --region
+      - us-west-2
+      - eks
+      - get-token
+      - --cluster-name
+      - talent-eks-SM2LaGeB
+      - --output
+      - json
+      command: aws
+- name: arn:aws:eks:us-west-2:533266970461:cluster/talent-eks-CL9edfvh
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1beta1
+      args:
+      - --region
+      - us-west-2
+      - eks
+      - get-token
+      - --cluster-name
+      - talent-eks-CL9edfvh
+      - --output
+      - json
+      command: aws
